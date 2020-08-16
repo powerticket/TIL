@@ -1,0 +1,10 @@
+header {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 4rem;
+}
+
+footer {
+  text-align: end;
+  font-size: 2rem;
+}
