@@ -42,3 +42,12 @@
 ### Django
 
 1. [Django basic](study/web/django-basic.md)
+
+
+
+## Collaboration tools
+
+### Git
+
+1. [Git manual](study/collaboration-tools/git.md)
+

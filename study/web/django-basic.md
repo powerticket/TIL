@@ -1,6 +1,6 @@
-# Web framework
+# Django
 
-## Django
+## Quick start
 
 ### Introduction
 
@@ -247,3 +247,59 @@ $ `python manage.py runserver`
 - variables: `{{ }}`
 - filters: `{{ variable|filter }}`
 - tags: `{% tag %}`
+
+
+
+## Model
+
+`models.py` -> `python manage.py makemigrations` -> `python manage.py migrate`
+
+
+
+### models.py
+
+```python
+from django.db import models
+
+# Create your models here.
+class Article(models.Model):
+    title = models.CharField(max_length=10)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+```
+
+
+
+### Migrations
+
+#### Command
+
+`makemigrations`
+
+`migrate`
+
+`sqlmigrate`
+
+`showmigrations`
+
+
+
+### Administrator
+
+$ `python manage.py createsuperuser`
+
+```python
+# articles/admin.py
+
+from django.contrib import admin
+from .models import Article
+
+
+admin.site.register(Article)
+```
+
+
+
+### DB API
+
+e.g. `Article.objects.all()` - Class: `Article`, Manager: `objects`, QuerySet API: `all()`

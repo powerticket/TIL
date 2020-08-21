@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1 class="text-center">Articles's Index Page</h1>
+  <hr>
+  {% for article in articles %}
+    <a href="{% url 'articles:detail' article.pk %}"><h5>{{ article.pk }}번 째 글 | {{ article.title }}</h5></a>
+    <p>{{ article.content }}</p>
+    <hr>
+  {% endfor %}
+  <div class="text-right">
+    <a class="btn btn-primary" href="{% url 'articles:new' %}">새 글 작성</a>
+  </div>
+{% endblock %}
