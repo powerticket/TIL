@@ -7,47 +7,49 @@
 
 ## Programming language
 
-### Python
-
-1. [Python basic](study/python/python-basic.md)
-
-
-
-### C
-
-1. C basic
-
-
-
-### Java
-
-1. Java basic
+| Subject | Study                                                        | ref  |
+| ------- | ------------------------------------------------------------ | ---- |
+| Python  | [basic](study/python/python-basic.md), [venv](study/python/python-venv.md) |      |
+| C       | basic                                                        |      |
+| Java    | basic                                                        |      |
 
 
 
 ## Web
 
-### HTML
-
-1. [HTML basic](study/web/html-basic.md)
-
-
-
-### CSS
-
-1. CSS basic
-
-   
-
-### Django
-
-1. [Django basic](study/web/django-basic.md)
+| Subject                                                      | Study                                                        | ref  |
+| :----------------------------------------------------------- | ------------------------------------------------------------ | ---- |
+| [HTML/CSS](https://developer.mozilla.org/ko/docs/Learn/HTML) | [HTML-basic](study/web/html-basic.md), [CSS-basic](study/web/css-basic.md), [CSS-layout](study/web/css-layout.md), [Bootstrap](study/web/bootstrap.md) |      |
+| [Django](https://www.djangoproject.com/)                     | [basic](study/web/django-basic.md)                           |      |
 
 
 
 ## Collaboration tools
 
-### Git
+| Subject                     | Study                                                        | ref  |
+| --------------------------- | ------------------------------------------------------------ | ---- |
+| [Git](https://git-scm.com/) | [Manual](study/collaboration-tools/git.md), [.gitignore](https://www.toptal.com/developers/gitignore) |      |
+| JIRA                        |                                                              |      |
+| Slack                       |                                                              |      |
 
-1. [Git manual](study/collaboration-tools/git.md)
+
+
+## Python library
+
+| Subject            | Library                                   | Study | ref  |
+| ------------------ | ----------------------------------------- | ----- | ---- |
+| Data processing    | [Pandas](https://pandas.pydata.org/)      |       |      |
+| Deep learning      | [Keras](https://keras.io/)                |       |      |
+| Machine learning   | [TensorFlow](https://www.tensorflow.org/) |       |      |
+| Machine learning   | [scikit-learn](https://scikit-learn.org/) |       |      |
+| Numerical analysis | [NumPy](https://numpy.org/)               |       |      |
+| Data visualization | [Matplotlib](https://matplotlib.org/)     |       |      |
+
+
+
+## Unclassified
+
+| Subject                           | Study | ref                                                          |
+| --------------------------------- | ----- | ------------------------------------------------------------ |
+| [Docker](https://www.docker.com/) |       | [Docker Instruction](https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C) |
 

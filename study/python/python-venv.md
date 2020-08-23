@@ -27,4 +27,3 @@ Install requirements format file.
 ### VS Code
 
 Python: Select Interpreter -> Select venv
-
