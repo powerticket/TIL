@@ -15,6 +15,14 @@
 
 
 
+## Problem solving
+
+| Subject   | Study                                                        | ref  |
+| --------- | ------------------------------------------------------------ | ---- |
+| Algorithm | [sort&search](study/algorithm/aps-sort-search.md), [string](study/algorithm/aps-string.md) |      |
+
+
+
 ## Web
 
 | Subject                                                      | Study                                                        | ref  |
@@ -49,7 +57,8 @@
 
 ## Unclassified
 
-| Subject                           | Study | ref                                                          |
-| --------------------------------- | ----- | ------------------------------------------------------------ |
-| [Docker](https://www.docker.com/) |       | [Docker Instruction](https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C) |
+| Subject                                              | Study                                    | ref                                                          |
+| ---------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
+| [Docker](https://www.docker.com/)                    |                                          | [Docker Instruction](https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C) |
+| [WSL](https://docs.microsoft.com/en-us/windows/wsl/) | [quick](study/unclassified/wsl-quick.md) |                                                              |
 
