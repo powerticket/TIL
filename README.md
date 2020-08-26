@@ -19,7 +19,7 @@
 
 | Subject   | Study                                                        | ref  |
 | --------- | ------------------------------------------------------------ | ---- |
-| Algorithm | [sort&search](study/algorithm/aps-sort-search.md), [string](study/algorithm/aps-string.md) |      |
+| Algorithm | [sort&search](study/algorithm/aps-sort-search.md), [string](study/algorithm/aps-string.md), [stack](study/algorithm/aps-stack.md) |      |
 
 
 
