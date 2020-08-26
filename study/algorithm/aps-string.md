@@ -4,6 +4,10 @@
 
 ## Pattern matching
 
+### Brute force
+
+
+
 ### KMP algorithm
 
 > Knuth, Morris, Prett
