@@ -65,6 +65,12 @@ print(r1)
 
 > Compare and swap
 
+![](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
+
+
+
+#### Implementation
+
 1. Find a minimum in a given list.
 2. Swap the minimum value with a first value of a list.
 3. Exclude the minimum value and repeat until last.
@@ -83,11 +89,51 @@ selection_sort(arr)
 
 
 
-### Quicksort
+
 
 ### Insertion sort
 
+![img](https://upload.wikimedia.org/wikipedia/commons/e/ea/Insertion_sort_001.PNG)![Insertion sort.gif](https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif)
+
+```python
+def insert_sort(x):
+	for i in range(1, len(x)):
+		j = i - 1
+		key = x[i]
+		while x[j] > key and j >= 0:
+			x[j+1] = x[j]
+			j = j - 1
+		x[j+1] = key
+	return x
+```
+
+
+
+### Quicksort
+
+```python
+def quick_sort(x):
+    if len(x) <= 1:
+        return x
+    mid = x[len(x)//2]
+    less = []
+    equal = []
+    more = []
+    for a in x:
+        if a < mid:
+            less.append(a)
+        elif a > mid:
+            more.append(a)
+        else:
+            equal.append(a)
+    return quick_sort(less) + equal + quick_sort(more)
+```
+
+
+
 ### Merge sort
+
+![img](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 
 
