@@ -18,7 +18,6 @@ def go_maze(r, c):
         maze[r][c] = 5
     return 0
 
-        
 
 for t in range(1, int(input())+1):
     N = int(input())

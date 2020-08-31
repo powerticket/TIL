@@ -14,7 +14,7 @@ def postfix_converter(tokens):
                 elif ISP[TOKEN.index(stack[-1])] < ICP[TOKEN.index(token)]:
                     stack.append(token)
                 else:
-                    while ISP[TOKEN.index(stack[-1])] >= ICP[TOKEN.index(token)]:
+                    while stack and ISP[TOKEN.index(stack[-1])] >= ICP[TOKEN.index(token)]:
                         result.append(stack.pop())
                     stack.append(token)
             else:
@@ -45,5 +45,7 @@ def postfix_calculator(tokens):
     return stack.pop()
 
 
-print(postfix_calculator(postfix_converter('(6+5*(2-8)/2)')))
-print(eval('6+5*(2-8)/2'))
+for t in range(1, 11):
+    N = int(input())
+    tokens = input()
+    print('#{} {}'.format(t, postfix_calculator(postfix_converter(tokens))))
