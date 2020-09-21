@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<img src="{% static 'articles/images/sample.jpg' %}" alt="sample img">
+<h1>Index Page</h1>
+<a href="{% url 'articles:create' %}">CREATE</a>
+<hr>
+<ul>
+  {% for article in articles %}
+    <li>글 번호 : {{ article.pk }}</li>
+    <li>글 제목 : {{ article.title }}</li>
+    <li>글 내용 : {{ article.content }}</li>
+    <a href="{% url 'articles:detail' article.pk %}">DETAIL</a>
+    <hr>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,14 +1,12 @@
-# Security
+# Django
 
-| Hacker  | Name                                                         |
-| ------- | ------------------------------------------------------------ |
-| Legal   | White-hat, Bug-bounty                                        |
-| Illegal | Black-hat, Cyber-gang, Hacktivist                            |
-| Middle  | Cyber-mercenaries, Script-kiddies, Grey-hat, Nationalist-hacker |
+## Security
+
+원래 Security를 하나의 큰 카테고리로 설정했었으나 보안의 범위가 워낙 넓고 방대하여 엄두가 나지 않았다. 우선 현재 공부하고 있는 Django와 관련하여 보안 이슈가 많이 나올 것으로 생각되어서 공부를 하면서 생각나는 것들을 차근차근 정리해보려고 한다.
 
 
 
-## Session Hijacking
+### Session Hijacking
 
 ​	Django 로그인 기능을 구현하면서 비연결성(Connectionsless), 무상태(Stateless)라는 특성을 가진 HTTP 프로토콜에서 로그인 상태를 유지하기 위한 도구인 Cookie와 Session에 대해서 배웠다. 로그인을 하면 서버에서 Session ID를 만들어 DB와 사용자의 Cookie에 저장하여 해당 사용자가 로그인 중임을 확인하는 것인데, 다른 유저의 브라우저에서 Session ID를 알아내게 되면 해당 인원의 권한으로 로그인을 할 수 있기에 보안상 문제가 있을 것 같다고 생각했다.
 
@@ -16,7 +14,7 @@
 
 
 
-### Prevention
+#### Prevention
 
 해당 공격을 막기 위한 방법에는 여러 가지가 있는데 Django에서 이미 지원하는 기능도 아닌 기능도 있다. 지원하는 기능은 Check 표시를 해두었다.
 

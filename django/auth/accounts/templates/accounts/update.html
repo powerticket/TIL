@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>회원수정</h1>
+<a href="{% url 'accounts:pwdupdate' %}">비밀번호 변경</a>
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit">
+</form>
+{% endblock %}

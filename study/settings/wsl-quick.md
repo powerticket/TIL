@@ -45,3 +45,39 @@ Restart and download linux at Microsoft Store
 - [Pengwin Enterprise](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
 - [Alpine WSL](https://www.microsoft.com/store/apps/9p804crf0395)
 
+
+
+## Customizing
+
+### Settings.json
+
+VS Code가 깔려있을 때, 터미널에서 설정을 열면 VS Code로 열린다.
+
+![image-20200920131939693](wsl-quick.assets/image-20200920131939693.png)
+
+
+
+윈도우 터미널을 열 때, 기본으로 열리는 창을 WSL2로 바꿔주기 위해서 `defaultProfile`을 수정한다. guid는 `profiles`에서 확인할 수 있다.
+
+```json
+{
+	"defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+}
+```
+
+
+
+### [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+
+> zsh framework 
+
+#### [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+> zsh theme
+
+
+
+### [Color schemes in Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes)
+
+#### [TerminalSplash](https://terminalsplash.com/)
+

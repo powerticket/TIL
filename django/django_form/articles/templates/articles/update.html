@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+  <h1 class="text-center">NEW</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% buttons submit="Submit" reset="Cancel" %}{% endbuttons %}
+  </form>
+  <hr>
+  <a href="{% url 'articles:index' %}">[back]</a>
+{% endblock %}

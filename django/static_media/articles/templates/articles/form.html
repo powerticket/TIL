@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+  {% if request.resolver_match.url_name == 'create' %}
+    <h1>Create Page</h1>
+  {% elif request.resolver_match.url_name == 'update' %}
+    <h1>Update Page</h1>
+  {% endif %}
+  <form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons submit="Submit" reset="Reset" %}{% endbuttons %}
+  </form>
+{% endblock %}
