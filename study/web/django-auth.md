@@ -40,6 +40,38 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
 
+### `AUTH_USER_MODEL`
+
+Django에서 User model을 수정하기 위해서는 최초에 settings.py에서 AUTH_USER_MODEL 변수의 값을 변경해야한다.
+
+```python
+# settings.py
+
+AUTH_USER_MODEL = 'accounts.User'
+```
+
+```python
+# accounts/models.py
+
+from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+
+class User(AbstractUser):
+    pass
+```
+
+```python
+# accounts/admin.py
+
+from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+from .models import User
+
+admin.site.register(User, UserAdmin)
+
+```
+
 
 
 ## 참고
