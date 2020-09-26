@@ -155,3 +155,9 @@ UNION : SELECT 컬럼1, 컬럼2 FROM 테이블
 
 덧) WHERE절에서 연산자의 왼쪽은 가동하지 않는다. 컬럼을 가공하면 색인을 사용할 수 없다.
     WHERE 컬럼 * 3 < 10 말고 WHERE 컬럼 < 10 / 3 을 사용하자
+
+
+
+
+
+select A.ID as PLACE_ID, A.NAME, count(*) from PLACES as A left outer join PLACES_REVIEWS as B group by A.ID order by A.ID
