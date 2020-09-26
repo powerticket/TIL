@@ -1,42 +1,27 @@
 # Docker
 
-Docker는 리눅스의 응용 프로그램들을 소프트웨어 컨테이너 안에 배치시키는 일을 자동화하는 오픈 소스 프로젝트이다.
+Docker는 리눅스의 응용 프로그램들을 소프트웨어 컨테이너(시스템의 모든 프로세스와 격리된 하나의 프로세스) 안에 배치시키는 일을 자동화하는 오픈 소스 프로젝트이다.
 
 
 
 ## Command
 
-### `docker images`
-
-Docker의 이미지 리스트를 확인한다.
+docker <command> -<option> <image>
 
 
 
-### `docker rm container_name`
+### run
 
-특정 container를 삭제한다.
+도커 파일을 실행한다. 이미지가 없을 경우 자동 pull 후에 실행한다.
+
+
 
 #### Option
 
-`-f`: 강제 삭제
+##### `-d`
 
+백그라운드에서 컨테이너를 실행한다.
 
+##### `-p host_port:container_port`
 
-### `docker rmi container_name`
-
-특정 image를 삭제한다.
-
-#### Option
-
-`-f`: 강제 삭제
-
-
-
-### `docker ps`
-
-container 리스트 확인
-
-#### Option
-
-`-a`: 모든 container를 보여준다.(기본값은 현재 실행중인 container만 보여준다.)
-
+호스트와 컨테이너의 포트를 매핑한다.
