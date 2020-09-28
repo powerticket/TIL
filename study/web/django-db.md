@@ -113,7 +113,7 @@ class Comment(models.Model):
 
 
 
-#### A many-to-one relationship in Django
+#### A many-to-many relationship in Django
 
 ```python
 from django.db import models
