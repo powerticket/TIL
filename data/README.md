@@ -77,6 +77,54 @@ plt.boxplot(random_list)
 plt.show()
 ```
 
+##### Bar
+
+```python
+import matplotlib.pyplot as plt
+import random
+
+
+random_list = []
+for _ in range(20):
+    random_list.append(random.randint(1, 50))
+print(random_list)
+plt.bar(range(1, 21), random_list)
+plt.show()
+plt.barh(range(1, 21), random_list)
+plt.show()
+```
+
+##### Pie
+
+```python
+import matplotlib.pyplot as plt
+
+
+plt.axis('equal')
+data = [10, 20, 15, 25]
+labels = ['A', 'B', 'C', 'D']
+colors = ['darkmagenta', 'deeppink', 'hotpink', 'pink']
+plt.pie(data, labels=labels, autopct='%.1f%%', colors=colors, explode=(0, 0, 0.1, 0), startangle=90)
+plt.legend()
+plt.show()
+```
+
+
+
+#### Reference
+
+- [Color](https://matplotlib.org/examples/color/named_colors.html)
+
+
+
+### [NumPy](https://numpy.org/)
+
+#### Installation
+
+```bash
+$ pip install numpy
+```
+
 
 
 ## 참고
