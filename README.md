@@ -10,8 +10,8 @@
 | Subject                                                      | Study                                                        | ref  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
 | Python                                                       | [Basic](study/python/python-basic.md), [Venv](study/python/python-venv.md) |      |
-| C                                                            | Basic                                                        |      |
-| Java                                                         | Basic                                                        |      |
+| C / C++                                                      | Basic                                                        |      |
+| Java                                                         | [Installation](study/java/java-installation.md), [Basic](study/java/java-basic.md) |      |
 | [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript) |                                                              |      |
 
 
@@ -75,4 +75,14 @@
 | [Docker](https://www.docker.com/)                    |                                          | [Docker Instruction](https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C) |
 | [WSL](https://docs.microsoft.com/en-us/windows/wsl/) | [Quick](study/unclassified/wsl-quick.md) |                                                              |
 | [OpenCV](https://opencv.org/)                        |                                          |                                                              |
+
+
+
+## Cloud
+
+| Subject                       | Study                           | ref  |
+| ----------------------------- | ------------------------------- | ---- |
+| [Heroku](https://heroku.com/) | [basic](study/heroku/README.md) |      |
+|                               |                                 |      |
+|                               |                                 |      |
 
